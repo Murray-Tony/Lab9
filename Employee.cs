@@ -20,7 +20,7 @@ class Employee {
           age = value;
       }
     }
-    public YearlySalary {
+    public double YearlySalary {
       get {return salary;}
       set{
         if (value<1000)
