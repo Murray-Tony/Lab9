@@ -9,6 +9,28 @@ class Employee {
     private string title;
     private double salary;
     private string employmentstatus;
+    public string FirstName {}
+    public string LastName {}
+    public int Age {
+      get{ return age;}
+      set{
+        if (value<18)
+          age = 18;
+        else
+          age = value;
+      }
+    }
+    public YearlySalary {
+      get {return salary;}
+      set{
+        if (value<1000)
+          salary = 1000;
+        else
+        {
+          salary = value;
+        }
+      }
+    }
     public Employee()
     {
       firstname = "Unknown";
