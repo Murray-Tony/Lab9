@@ -9,8 +9,8 @@ class Employee {
     private string title;
     private double salary;
     private string employmentstatus;
-    public string FirstName {}
-    public string LastName {}
+    public string FirstName {get;set;}
+    public string LastName {get;set;}
     public int Age {
       get{ return age;}
       set{
