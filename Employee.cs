@@ -11,6 +11,8 @@ class Employee {
     private string employmentstatus;
     public string FirstName {get;set;}
     public string LastName {get;set;}
+    public string ID {get;set;}
+    public string EmploymentStatus {get;set;}
     public int Age {
       get{ return age;}
       set{
@@ -33,19 +35,19 @@ class Employee {
     }
     public Employee()
     {
-      firstname = "Unknown";
-      lastname = "Unknown";
-      id = "Unknown";
-      age=0;
-      employmentstatus= "Active";
+      FirstName = "Unknown";
+      LastName = "Unknown";
+      ID = "Unknown";
+      Age=0;
+      EmploymentStatus= "Active";
     }
     public Employee(string empfirstname, string emplastname, string empid, int empage)
     {
-      firstname = empfirstname;
-      lastname=emplastname;
-      id=empid;
-      age=empage;
-      employmentstatus="Active";
+      FirstName = empfirstname;
+      LastName=emplastname;
+      ID=empid;
+      Age=empage;
+      EmploymentStatus="Active";
     }
     public void Intro()
       {
