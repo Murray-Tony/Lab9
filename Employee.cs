@@ -51,10 +51,10 @@ class Employee {
     }
     public void Intro()
       {
-        Console.WriteLine("My name is " + firstname+" "+lastname);
-        Console.WriteLine("My id is "+id);
-        Console.WriteLine("My age is "+age);
-        Console.WriteLine("My employment status is "+employmentstatus);
+        Console.WriteLine("My name is " + FirstName+" "+LastName);
+        Console.WriteLine("My id is "+ID);
+        Console.WriteLine("My age is "+Age);
+        Console.WriteLine("My employment status is "+EmploymentStatus);
       }
     
 }
