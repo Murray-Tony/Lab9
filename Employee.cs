@@ -56,5 +56,9 @@ class Employee {
         Console.WriteLine("My age is "+Age);
         Console.WriteLine("My employment status is "+EmploymentStatus);
       }
+    public void IncreaseSalary(double percentincrease)
+    {
+      
+    }
     
 }
