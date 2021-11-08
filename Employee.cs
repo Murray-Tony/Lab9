@@ -41,24 +41,46 @@ class Employee {
       Age=0;
       EmploymentStatus= "Active";
     }
-    public Employee(string empfirstname, string emplastname, string empid, int empage)
+    public Employee(string empfirstname, string emplastname, string empid, int empage, int yearlysalary)
     {
       FirstName = empfirstname;
       LastName=emplastname;
       ID=empid;
       Age=empage;
       EmploymentStatus="Active";
+      YearlySalary=yearlysalary;
     }
     public void Intro()
       {
-        Console.WriteLine("My name is " + FirstName+" "+LastName);
-        Console.WriteLine("My id is "+ID);
-        Console.WriteLine("My age is "+Age);
-        Console.WriteLine("My employment status is "+EmploymentStatus);
+        Console.WriteLine("First name: " + FirstName);
+        Console.WriteLine("Last name: " + LastName);
+        Console.WriteLine("Age: "+Age);
+        Console.WriteLine("ID: "+ID);
+        Console.WriteLine("Yearly Salary: "+YearlySalary);
+        
       }
-    public void IncreaseSalary(double percentincrease)
+    public void IncreaseSalary(double percent)
     {
-      
+      if (percent>=0){
+      YearlySalary = YearlySalary+(YearlySalary*percent);
+      Console.WriteLine("Yearly salary updated to "+ YearlySalary);
+      }
+      else
+      {
+        Console.WriteLine("Invalid input. Yearly Salary not updated.");
+      }
+    }
+    public void RemoveEmployee()
+    {
+      if (EmploymentStatus == "Inactive")
+      {
+        Console.WriteLine("Employee is already inactive.");
+      }
+      else
+      {
+        EmploymentStatus = "Inactive";
+        Console.WriteLine("Employee removed successfully!");
+      }
     }
     
 }
